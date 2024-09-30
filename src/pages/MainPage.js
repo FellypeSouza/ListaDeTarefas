@@ -1,8 +1,10 @@
 import React from "react";
 import Welcome from "../components/Welcome";
 
-export default function MainPage(userName){
+export default function MainPage({userName}, props){
     return(
-        <Welcome userName={userName}/>
+        <section>
+            <h1 userName={userName}>Hello {userName}</h1>
+        </section>
     );
 }

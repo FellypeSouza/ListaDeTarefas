@@ -1,5 +1,7 @@
 import "../styles/Welcome.scss";
 import React, { useState } from "react";
+import Nav from "./Nav";
+import MainPage from "../pages/MainPage";
 
 export default function Welcome(props){
 
@@ -10,14 +12,16 @@ export default function Welcome(props){
     }
 
     return(
-        <section className="container">
-            <header>
-                <h1>Seja bem-vindo(a)!</h1>
-                <h3>Para começar insira seu nome</h3>
-                <input type="text" id="inputName" value={userName} onChange={handleInputChange}/>
-                <button onClick={()=>{window.location.href="/mainpage"}}>Entrar</button>
-                <p>Nome inserido: {userName}</p>
-            </header>
+        <section>
+            <Nav/>
+            <section className="container">
+                <header>
+                    <h1>Seja bem-vindo(a)!</h1>
+                    <input type="text" id="inputName" value={userName} onChange={handleInputChange} placeholder="Insira seu nome"/>
+                    <button onClick={()=>{window.location.href="/mainpage"}}>Entrar</button>
+                    {/* <p>Nome inserido: {userName}</p> */}
+                </header>
+            </section>
         </section>
     );
     
