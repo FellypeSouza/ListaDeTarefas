@@ -8,26 +8,22 @@
         h1{
             font-size: 3rem;
         }
-        input{
-            border: none;
-            background-color: #0000003f;
-            color: #fff;
-            border-bottom: 1px solid rgb(31, 102, 255);
-            padding: 0.75rem;
-        }
-        input:hover{
-            border-bottom: 1px solid rgb(205, 221, 255);
-            transition: all 250ms;
-        }
-        input:not(:hover){
-            transition: all 250ms;
+        h4{
+            line-height: 2rem;
+            text-align: center;
+            a{
+                text-decoration: underline;
+                color: rgb(144, 203, 255);
+            }
         }
         button{
             background-color: #0000003f;
             color: #fff;
             border: none;
+            border-radius: 15px;
             border-bottom: 1px solid rgb(31, 102, 255);
-            padding: 0.75rem;
+            padding: 1rem 5rem 1rem 5rem;
+            font-size: 1rem;
             margin: 0.5rem;
             cursor: pointer;
         }

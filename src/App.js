@@ -4,7 +4,11 @@ import {Route,Routes, BrowserRouter} from "react-router-dom";
 import WelcomePage from './pages/WelcomePage';
 import MainPage from './pages/MainPage';
 
-function App() {
+function App(props) {
+  const user = {
+     nome: ""
+  }
+
   return (
     <BrowserRouter>
         <Routes>

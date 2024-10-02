@@ -1,10 +1,16 @@
-import React from "react";
-import Welcome from "../components/Welcome";
+import React, { useState } from "react";
+import Nav from "../components/Nav";
+import MainContent from "../components/MainContent";
 
-export default function MainPage({userName}, props){
+export default function MainPage(props){
+    
+    
     return(
         <section>
-            <h1 userName={userName}>Hello {userName}</h1>
+            <Nav/>
+            <section>
+                <MainContent/>
+            </section>
         </section>
     );
 }

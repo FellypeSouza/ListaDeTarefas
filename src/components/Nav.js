@@ -4,7 +4,7 @@ export default function Nav(props){
     return(
         <nav>
             <section className="Logo">
-                Lista de Tarefas
+                Lista de tarefas
             </section>
             <section className="navLinks">
                 <a href="/">início</a>
