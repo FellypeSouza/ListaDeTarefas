@@ -1,17 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/MainContent.scss";
 
 export default function MainContent(props){
+
+    const [tasks, setTasks] = useState(null);
+
+    if (tasks == null) {
+        setTasks("Nenhuma tarefa adicionada");
+    }
+
     return(
         <section>
-            <section className="inputNameBackGround">
-                <section className="inputNameContainer">
-                    <section className="inputs">
-                        <input type="text" placeholder="Insira seu nome"></input>
-                        <input type="number" placeholder="Insira sua idade" min={0} max={99}></input>
-                        <button>Entrar</button>
-                    </section>
-                </section>
+            <section className="tasks">
+                <h1>{tasks}</h1>
             </section>
         </section>
     );
