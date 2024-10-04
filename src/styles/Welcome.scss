@@ -16,23 +16,23 @@
                 color: rgb(144, 203, 255);
             }
         }
-        button{
-            background-color: #0000003f;
-            color: #fff;
-            border: none;
-            border-radius: 15px;
-            border-bottom: 1px solid rgb(31, 102, 255);
-            padding: 1rem 5rem 1rem 5rem;
-            font-size: 1rem;
-            margin: 0.5rem;
-            cursor: pointer;
-        }
-        button:hover{
-            border-bottom: 1px solid rgb(205, 221, 255);
-            transition: all 250ms;
-        }
-        button:not(:hover){
-            transition: all 250ms;
-        }
     }
+}
+button{
+    background-color: #0000003f;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    border-bottom: 1px solid rgb(106, 153, 255);
+    padding: 1rem 5rem 1rem 5rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+button:hover{
+    border-bottom: 1px solid rgb(205, 221, 255);
+    transition: all 250ms;
+}
+button:not(:hover){
+    transition: all 250ms;
 }
